@@ -1,0 +1,11 @@
+Riak CSV
+
+This module aims to give you a simple way to get your buckets as csv dumps.
+
+The main motivation behind this was to be able to create data frames in R a little easier from riak. One could just write an R-package to encode the json, etc...but IMHO the less of that you have R do, the more memory you'll have for your work.
+
+Caveats
+
+Obviously CSV requires that your rows be uniform. Therefore, if you have a bucket with non uniform entries it's going to get hairy.
+
+For now the first item (in the bucket) will have its properties extracted and those will be used to pluck all the subsequent values.

@@ -1,0 +1,14 @@
+{application, riak_csv,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  webmachine,
+									riak_kv
+                 ]},
+  {mod, { riak_csv_app, [riak_csv_file]}},
+  {env, []}
+ ]}.

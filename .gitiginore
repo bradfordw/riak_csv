@@ -1,0 +1,5 @@
+deps/*
+.eunit
+data/*
+ebin/*.beam
+
