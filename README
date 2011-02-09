@@ -9,3 +9,13 @@ Caveats
 Obviously CSV requires that your rows be uniform. Therefore, if you have a bucket with non uniform entries it's going to get hairy.
 
 For now the first item (in the bucket) will have its properties extracted and those will be used to pluck all the subsequent values.
+
+Currently not reading riak's host/port from config.
+
+Currently has some functions with an arity of 4/5 - this will be refactored to use a record instead. It's bugging me, so surely it'll bother you and the rest of the internet.
+
+Installation
+
+You can install this thing two ways. You can either add it to your riak rebar.config and reltool.config by looking at the example snippet meow: https://gist.github.com/817832
+
+Or! You can just compile it yourself and launch it by attaching to your riak cluster and executing the lovely and talented: application:start(riak_csv)
