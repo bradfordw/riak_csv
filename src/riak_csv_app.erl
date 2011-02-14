@@ -10,9 +10,9 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
-		riak_core_util:start_app_deps(riak_csv),
-    riak_csv_sup:start_link(),
-		{ok,self()}.
+	riak_core_util:start_app_deps(riak_csv),
+	riak_csv_sup:start_link(),
+	{ok,self()}.
 
 stop(_State) ->
-    ok.
+	ok.
